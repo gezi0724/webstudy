@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    width: 100%;
+} 
+.header img{
+    height: 1.51rem;
+    width: 2.38rem;
+    margin:0 auto;
+    display: block;
+}
+.first{
+    width: 2.39rem;
+    margin:0 auto;
+    margin-top: 0.84rem;
+    margin-bottom: 0.07rem;
+    padding-bottom: 0.07rem;
+    border-bottom: 0.01rem solid #E7E2E1;
+}
+.first img,.second img{
+    width: 0.24rem;
+    height:0.24rem;
+    vertical-align: middle;
+}
+.first input,.second input{
+    width: 2.07rem;
+    height: 0.14rem;
+    border: none;
+    outline: none;
+    /* outline: none; 除去input点击状态下的默认边框 */
+    vertical-align: middle;
+    /* vertical-align 属性用以设置元素的垂直对齐方式，middle表示把此元素放置在父元素的中部 */
+}
+input::-webkit-input-placeholder{
+    font: size 0.14rem;;
+    color: #AEAEAE;
+}
+.second{
+    width: 2.39rem;
+    margin:0 auto;
+    margin-top: 0.21rem;
+    margin-bottom: 0.07rem;
+    padding-bottom: 0.09rem;
+    border-bottom: 0.01rem solid #E7E2E1;
+}
+.third{
+    width: 2.39rem;
+    height: 0.4rem;
+    background-color:#E4E4E4;
+    margin:0 auto;
+    font-size: 0.14rem;
+    color: #FFFFFF;
+    line-height: 0.4rem;
+    text-align: center;
+}
+/* .third button{
+    font-size: 0.14rem;
+    color: #FFFFFF;
+} */
+.four{
+    width: 2.39rem;
+    margin: 0 auto;
+    margin-top: 0.14rem;
+    font-size: 0;
+    /* font-size: 0;  使用display：inline-block 布局时,出现的间距问题的解决*/
+} 
+.four .left{
+    display: inline-block;
+    border-right: 0.01rem solid #E7E2E1;
+    width: 50%;
+    text-align: right;
+    box-sizing: border-box;
+    /* box-sizing: border-box;  此时宽度width=border-left+padding-left+content+padding-right+border-right;  */
+    font-size: 0;
+}
+.four .right{
+    display: inline-block;
+    padding-left: 0.19rem;
+    width: 50%;
+    box-sizing: border-box;
+}
+.four .left span,.four .right span{
+    font-size: 0.12rem;
+    color: #937C78;
+    vertical-align: middle;
+    display: inline-block;
+}
+.four .left img{
+    margin-right: 0.19rem;
+    display: inline-block;
+}
+.four img{
+    width: 0.12rem;
+    height: 0.12rem;
+    margin-left: 0.04rem;
+    vertical-align: middle;
+}
+.top{
+    width: 2.39rem;
+    margin: 0 auto;
+    margin-top: 0.67rem;
+    font-size: 0;
+}
+.top .left, .top .right{
+    width: 0.64rem;
+    height: 0.01rem;
+    background-color: #E4E4E4;
+    display: inline-block;
+    margin-bottom: 0.05rem;
+}
+.top .center{
+    font-size: 0.1rem;
+    color: #C9C9C9;
+    text-align: center;
+    margin-left: 0.05rem;
+    margin-right: 0.05rem;
+    display: inline-block;
+}
+.login_way{
+    width: 2.39rem;
+   margin:0 auto;
+    padding-top: 0.15rem;
+}
+.login_way .left,.login_way .right{
+    float: left;
+    width: 50%;
+}
+.login_way .weixin,.login_way .weibo{
+    border-radius: 50%;
+    background-color: #F4F1F0;
+    width: 0.48rem;
+    height: 0.48rem;
+    margin:0 auto;
+}
+.login_way  span,.login_way  span{
+    font-size: 0.12rem;
+    color: #BCADAA;
+    text-align: center;
+    display: block;
+    margin-top: 0.04rem;
+}
+.login_way .weixin img{
+    width: 0.22rem;
+    height: 0.26rem;
+    padding: 0.11rem 0.13rem;
+}
+.login_way .weibo img{
+    width: 0.21rem;
+    height: 0.25rem;
+    padding: 0.11rem 0.13rem;
+}
+.footer{
+    height:0.01rem;
+    width: 2.39rem;
+    background-color: #E4E4E4;
+    margin:0 auto;
+    margin-top: 0.15rem ;
+}
+.nav{
+    width: 3.75rem;
+    height: 0.49rem;
+    background-color: #FFFFFF;
+    border-top: 1px solid #E4E4E4;
+    position: fixed;
+    bottom: 0;
+    padding: 0.09rem 0  0.06rem 0;
+    box-sizing: border-box;
+}
+.bottom{
+    height: 100%;
+    font-size: 0;
+}
+.clearfix:after{
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.clearfix{
+    *zoom: 1;
+}
+.nav .left,.nav .center,.nav .right{
+    float: left;
+    font-size: 0.1rem;
+    color: #593B36;
+    width: 33.3%;
+}
+.bottom img{
+    width:0.2rem;
+    height: 0.2rem;
+    display: block;
+   margin:0 auto;
+}
+.bottom span{
+    display: block;
+    text-align: center;
+}

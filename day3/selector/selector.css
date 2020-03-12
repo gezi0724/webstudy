@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.father >.child{
+    font-size: 30px;
+    color: blueviolet;
+}
+.father .child .list{
+    font-size: 50px;
+    color: cadetblue;
+    text-indent: 20px;
+}
+a{
+    color: black;
+}
+a:link{
+    color: red;
+    font-size: 20px;
+    text-decoration: none;
+}
+.baidu:link{
+  color: green;
+}
+/* a:active{
+    color:green;
+    font-size: 20px;
+    }  */
+/* a:hover{
+    color:blue;
+    font-size: 40px;
+    } */
+
+/* a:visited{
+    color:palevioletred;
+    font-size: 20px;
+    } */
+
+
+
+ .footer{
+    color: blueviolet;
+}
+
+.line{
+    background-color: green;
+}
+.clearfix:after{
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.clearfix{
+    *zoom: 1;
+}
+
+.center{
+    font-size: 0;
+}
+.line span{
+    font-size: 20px;
+    width: 33.3%;
+    height: 30px;
+    display: inline-block;
+    text-align: center;  
+}
+.center span:first-child{
+    background-color: red;
+}
+.center span:nth-child(2){
+    background-color: black;
+}
+.center span:last-child{
+    background-color: burlywood;
+}
+img{
+    height: 200px;
+    width: 200px;
+}

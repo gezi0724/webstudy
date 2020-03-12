@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    width: 100%;
+    height: 0.44rem;
+    border-bottom: 0.01rem solid #B2B2B2;
+    text-align: center;
+    line-height: 0.44rem;
+    position: relative;
+}
+.header img{
+    width: 0.24rem;
+    height: 0.24rem;
+    position: absolute;
+    top: 0.1rem;
+    left: 0.1rem;
+}
+.header span{
+    font-size: 0.17rem;
+    color: #FF5032;
+}
+.centent{
+    width: 2.39rem;
+    margin: 0 auto;
+    margin-top: 1.13rem;
+    font-size: 0;
+}
+.centent .security—_code{
+    padding: 0.06rem 0;
+    border-bottom: 0.01rem solid #E7E2E1;
+}
+.security—_code img{
+    width: 0.24rem;
+    height: 0.24rem;
+    margin-right: 0.08rem;
+    display: inline-block;
+    vertical-align: middle;
+}
+.security—_code input[type=number]{
+    width: 1.23rem;
+    outline: none;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.07rem;
+    border: none;
+}
+ /* .centent .security—_code span{
+    font-size: 0.12rem;
+    color: #AEAEAE;
+    border: 0.01rem solid #AEAEAE;
+    text-align: center;
+    border-radius: 0.02rem;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0.08rem 0.09rem;
+   不严格状态下的使用，由于边框使用，会导致实际宽度大于原本的盒子宽度，所以加大了外围盒子宽度 
+}   */
+ /* .centent .security—_code span{
+    font-size: 0.12rem;
+    color: #AEAEAE;
+    border: 0.01rem solid #AEAEAE;
+    text-align: center;
+    border-radius: 0.02rem;
+    display: inline-block;
+    line-height: 0.26rem;
+    width: 0.74rem;
+    height: 0.26rem;
+    通过display: inline-block;将span设置宽高，由于边框多出2个像素，所以调整自身盒子的宽高 
+}  */
+.centent .security—_code span{
+    font-size: 0.12rem;
+    color: #AEAEAE;
+    border: 0.01rem solid #AEAEAE;
+    text-align: center;
+    border-radius: 0.02rem;
+    display: inline-block;
+    line-height: 0.26rem;
+    width: 0.76rem;
+    height: 0.28rem;
+    box-sizing: border-box;
+    /* 加了边框以后，整体宽度变化，此时设置box-sizing: border-box; */
+}
+.centent input[type=submit]{
+    width: 2.39rem;
+    height: 0.4rem;
+    background-color: #FF5031;
+    font-size: 0.14rem;
+    color: #FFFFFF;
+    text-align: center;
+    border-radius: 0.02rem;
+    margin-top: 0.21rem;
+}

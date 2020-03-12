@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3种样式优先级</title>
+    <link rel="stylesheet" href="style.css">
+
+   <style>
+   #form{
+    font-size: 20px;
+}
+  .one{
+    font-size: 40px;   
+}
+   </style>
+
+</head>
+
+<body>
+    <div>
+
+  <div id="form" class="list one" style="font-size: 80px;">
+    第一行
+  </div>  
+  <div class="list">
+    第二行
+  </div>
+  <div class="list three">
+    第三行
+  </div>
+  <div class="list">
+    第四行
+  </div>
+</div>
+
+</body>
+</html>
