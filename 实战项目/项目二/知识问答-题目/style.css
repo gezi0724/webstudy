@@ -2,18 +2,265 @@
     margin: 0;
     padding: 0;
 }
+.all{
+    background-image: linear-gradient(to right,#798ED7,#5C72C2);
+    width: 3.75rem;
+    margin-bottom: 0.2rem;
+}
+
+/* 头部区域 */
+.header{
+    width: 3.75rem;
+    height: 2.5rem;
+    position: relative;
+}
+.header .deadline{
+    width: 0.625rem;
+    height: 0.625rem;
+    position: absolute;
+    top: 0.165rem;
+    left: 0.2rem;
+    border: 0.01rem solid #FFFFFF;
+    background-color: transparent;
+    padding: 0.07rem 0.08rem;
+}
+.header .deadline .third,.header .deadline .total,.header .deadline .correct{
+    color: #FFFFFF;
+    text-align: center;
+}
+.header .deadline .third{
+    font-size: 0.16rem;
+    font-family: PingFang-SC-Bold;
+}
+.header .deadline .total,.header .deadline .correct{
+    font-size: 0.11rem;
+    font-family: PingFang-SC-Medium;
+}
+.header .knowledge{
+    width: 1.4rem;
+    height: 0.9rem;
+    position: absolute;
+    top: 1.07rem;
+    left: 0.21rem;
+    background-color: transparent;
+}
+.header .knowledge .ilele,.header .knowledge .answer{
+    font-family: STJTBZ;
+    color: #F3E69F;
+}
+.header .knowledge .ilele{
+    font-size: 0.3rem;
+}
+.header .knowledge .answer{
+    font-size: 0.2rem;
+}
+.header .knowledge .ongoing{
+    font-size: 0.14rem;
+    font-family: STJTBZ;
+    color: #FFFFFF;
+}
+.header .rules{
+    width: 0.52rem;
+    font-size: 0.13rem;
+    color: #F3E69F;
+    font-family: PingFang-SC-Medium;
+    border-bottom: 0.01rem solid #F3E69F;
+    position: absolute;
+    top: 2.1rem;
+    left: 0.215rem;
+}
+.header .time{
+    width: 1.43rem;
+    height: 0.125rem;
+    font-size: 0.12rem;
+    font-family: PingFang-SC-Medium;
+    color: #F3E69F ;
+    text-align: center;
+    position: absolute;
+    top: 0.165rem;
+    right: 0.195rem;
+}
+.header .result{
+    width: 0.7rem;
+    height: 0.2rem;
+    font-size: 0.11rem;
+    font-family: PingFang-SC-Medium;
+    color: #6B80CC;
+    background-color: #FFE682;
+    border-radius: 0.05rem;
+    text-align: center;
+    line-height: 0.2rem;
+}
+.header .one{
+    position: absolute;
+    top: 0.605rem;
+    right: 1.115rem;
+}
+.header .two{
+    position: absolute;
+    top: 0.505rem;
+    right: 0.235rem;
+}
+.header .prize_gift{
+    position: absolute;
+    bottom: 0.415rem;
+    right: 1.08rem;
+}
+.header .prize_toy{
+    position: absolute;
+    bottom: 0.71rem;
+    right: 0.235rem;
+}
+.header .prize_gift p,.header .prize_toy p{
+    font-size: 0.1rem;
+    font-family: PingFang-SC-Medium;
+    color: #FFFFFF;
+    text-align: center;
+}
+.header .wash{
+    position: absolute;
+    top: 0.98rem;
+    right: 1rem;
+}
+.header .child_toy{  
+    position: absolute;
+    top: 0.92rem;
+    right: 0.295rem;
+}
+.header .wash img{
+    width: 0.955rem;
+    height: 0.76rem;
+}
+.header .child_toy img{
+    width: 0.575rem;
+    height: 0.47rem;
+}
+
+/* 题目区域 */
+/* .topic{
+    width: 3.35rem;
+    height: 3.215rem;
+    margin: 0 auto;
+    background-color: #FFFFFF; 
+    position: relative; 
+    padding: 0.895rem 0.25rem 0.5rem 0.25rem;
+    box-sizing: border-box; 
+}
+.topic .first{
+    width: 0.85rem;
+    height: 0.85rem;
+    border-radius: 50%;
+    border: 0.05rem solid #7D91D7;
+    background-color: #FFFFFF;
+    color: #7D91D7;
+    margin: 0 auto;
+    position: absolute;
+    top: -0.25rem;
+    left: 1.25rem;  
+} 
+position定位方案：脱离文档流，不占空间。后边元素会位置提前，此时需要通过padding-top占用position定位元素的空间，使后续元素恢复复其正常位置。 */
+.topic{
+    width: 3.35rem;
+    margin: 0 auto;
+    background-color: #FFFFFF; 
+    border-radius: 0.05rem;
+}
+.topic .first{
+    width: 0.85rem;
+    height: 0.85rem;
+    border-radius: 50%;
+    border: 0.05rem solid #7D91D7;
+    background-color: #FFFFFF;
+    color: #7D91D7;
+    margin: 0 auto;
+    transform: translateY(-0.25rem);
+/* transform移动方案：移动以后不脱离文档流，其空间依然占用，后续元素位置不受影响。 */
+} 
+.topic .first .num1{
+    font-size: 0.36rem;
+    font-family: MuseoSansRounded-700;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+.topic .first .text{
+    font-size: 0.12rem;
+    font-family: PingFang-SC-Medium;
+    text-align: center;
+}
+.topic .question{
+    padding-top: 0.045rem;
+    padding-bottom: 0.5rem;
+}
+.topic .question p{
+    width: 2.9rem;
+    font-size: 0.18rem;
+    font-family: PingFang-SC-Bold;
+    color: #7D91D7;
+    margin-bottom: 0.25rem;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+}
+.topic .question .select1,.topic .question .select2,.topic .question .select3{
+    width: 2.85rem;
+    line-height: 0.4rem;
+    font-size: 0.14rem;
+    font-family: PingFang-SC-Regular;
+    color: #333333;
+    border-radius: 0.2rem;
+    border: 0.005rem solid #CCCCCC;
+    margin: 0 auto;
+    text-align: center;
+}
+.topic .question .select1,.topic .question .select2{
+    margin-bottom: 0.1rem;
+}
+.second{
+    margin-top: 0.45rem;
+}
+.topic .question .error{
+    background-image: linear-gradient(to right, #FE9868,#FE6858);
+    color: #ffffff;
+    border:none;
+}
+.topic .question .correct{
+    background-color: #5C72C2;
+    color: #ffffff;
+    border:none;
+}
+
+/* 底部导航栏 */
 .fixed_nav{
     width: 100%;
     height: 0.495rem;
+    border: 0.005rem solid #CCCCCC;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-size:0;
+    box-sizing: border-box;
 }
-.fixed_nav .target,.fixed_nav .submit{
+.fixed_nav .left,.fixed_nav .right{
     width: 50%;
+    height: 0.495rem;
+    display: inline-block;
+}
+.fixed_nav .left img{
+    width: 0.11rem;
+    height: 0.22rem;
+    transform: rotate(-180deg);
+    margin-left: 0.205rem;
+}
+.fixed_nav .left{
+    background-color: #FFFFFF;
 }
 .fixed_nav .right{
-
-}
-.all{
-    background-color: #7D91D7;
-    width: 100%;
-    height: 9.385rem;
+    width: 50%;
+    font-size: 0.18rem;
+    font-family: PingFang-SC-Regular;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 0.495rem;
+    background-image: linear-gradient(to right,#798ED7,#5C72C2);
+    display: inline-block;
 }

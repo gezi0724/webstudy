@@ -1,0 +1,53 @@
+.top{
+    width: 88px;
+    font-size: 24px;
+    font-family: PingFang-SC-Regular;
+    color: #FFFFFF;
+    text-align: center;
+    background-color: #F55A80;
+    padding: 14px 21px 0 19px;
+    box-sizing: border-box;
+}
+.bottom{
+    width: 0;
+    height: 0;
+    border-top: 44px solid  #F55A80;
+    border-right: 44px solid  rgba(0,0,0,0);
+    border-bottom: 44px solid rgba(0,0,0,0);
+    border-left: 44px solid  rgba(0,0,0,0);
+}
+
+/* 以下为练习div三角形样式，该如何实现? */
+/* 1，首先设置一个小盒子 */
+.box{
+    width: 20px;
+    height: 20px;
+    /* background-color: blue; */
+}
+/* 2, 给box添加四条边框样式，边框设置的宽一点，四条边框的颜色给不一样的值 */
+.box{
+    width: 50px;
+    height: 50px;
+    border-top: 50px solid red;
+    border-right: 50px solid yellow;
+    border-bottom: 50px solid green;
+    border-left: 50px solid pink;
+}
+/* 3,把box宽高设置为0，去掉背景色， 此时只剩下四周边框 */
+.box{
+    width: 0;
+    height: 0;
+    border-top: 50px solid red;
+    border-right: 50px solid yellow;
+    border-bottom: 50px solid green;
+    border-left: 50px solid pink;
+}
+/* 4，保留上面边框（三角形箭头向下），此时需要将左、下、右的颜色设置为透明，只剩【上边框】即可 */
+.box{
+    width: 0;
+    height: 0;
+    border-top: 50px solid  #F55A80;
+    border-right:55px solid  rgba(0,0,0,0);
+    border-bottom: 50px solid rgba(0,0,0,0);
+    border-left: 50px solid rgba(0,0,0,0);
+}
