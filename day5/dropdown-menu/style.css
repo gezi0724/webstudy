@@ -1,0 +1,43 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropbtn{
+    font-size: 16px;
+    color: white;
+    background-color: #4CAF50;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown-content{
+    position: absolute;
+    display: none;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    /* min-width 属性，设置元素最小宽度 */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /* 表示含义：阴影水平偏移值（可取正负值）；阴影垂直偏移值（可取正负值）；阴影边框；阴影模糊值；阴影颜色（第四个2，指透明度）  */
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    /* text-decoration属性：
+    none   默认，文本去掉下划线 
+    underline   文本下划线
+    overline	文本上划线
+    line-through	穿过文本的一条线
+    blink	定义闪烁的文本
+    inherit	从父元素继承 text-decoration 属性的值 */
+    display: block;
+}
+.dropdown-content a:hover{
+    background-color: #f1f1f1
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}

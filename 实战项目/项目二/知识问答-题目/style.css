@@ -233,7 +233,7 @@ position定位方案：脱离文档流，不占空间。后边元素会位置提
 .fixed_nav{
     width: 100%;
     height: 0.495rem;
-    border: 0.005rem solid #CCCCCC;
+    border-top: 0.005rem solid #CCCCCC;
     position: fixed;
     bottom: 0;
     right: 0;

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>下拉菜单</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="dropdown">
+        <button class="dropbtn">下拉菜单</button>
+        <div class="dropdown-content">
+            <a href="//www.runoob.com">菜鸟教程 1</a>
+            <a href="//www.runoob.com">菜鸟教程 2</a>
+            <a href="//www.runoob.com">菜鸟教程 3</a>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+<!--  本节重点:
+html部分：
+使用任何的 html 元素打开下拉菜单，如：<span>, 或 a <button> 元素。
+使用容器元素 (如： <div>)  来创建下拉菜单的内容，并放在任何你想放的位置上。
+使用 <div> 元素来包裹这些元素，并使用 CSS 来设置下拉内容的样式。
+
+css部分：
+.dropdown 类使用 position:relative, 这将设置下拉菜单的内容放置在下拉按钮 (使用 position:absolute) 的右下角位置。
+.dropdown-content 类中是实际的下拉菜单。默认是隐藏的，在鼠标移动到指定元素后会显示。
+注意: min-width=160px。 也可以随意修改它的值。 
+注意: 如果你想设置下拉内容与下拉按钮的宽带一致，可设置 width=100% ( overflow:auto 设置可以在小尺寸屏幕上滚动)。
+我们使用 box-shadow 属性让下拉菜单看起来像一个"卡片"。
+
+:hover 选择器，用户将鼠标移动到下拉按钮上时显示下拉菜单。 -->
