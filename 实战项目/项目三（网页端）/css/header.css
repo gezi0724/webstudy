@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* 顶部登录注册 */
+.header{
+    width: 100%;
+    height: 30px;
+    background-color: #E3E4E5;
+}
+.top{
+    width: 1190px;
+    height: 30px;
+    background-color: #E3E4E5;
+    margin: 0 auto;
+    font-size: 0;
+}
+.clearfix:after{
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.clearfix{
+    *zoom: 1;
+}
+.top .address{
+    width: 58px;
+    float: left;
+    line-height: 30px;
+}
+.top .address img{
+    width: 14px;
+    height: 14x;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+.top .address .shanxi{
+    font-size: 10px;
+    color: #999999;
+    vertical-align: middle;
+}
+.top .registered{
+    width: 717px;
+    float: right;
+    line-height: 30px;
+}
+.top .registered .login{
+    font-size: 10px;
+    color: #999999;
+    margin-right: 8px;
+}
+.top .registered .select:nth-child(2),.top .registered .select:nth-child(6){
+    font-size: 12px;
+    color: #FF0000;
+}
+.top .registered .select{
+    font-size: 10px;
+    color: #999999;
+    padding: 0 7px;
+    border-right: 0.01rem solid #CCCCCC;
+    border-left: 0.01rem solid #CCCCCC;
+}
+.top .registered .select:nth-child(2){
+    border-left: none;
+}
+.top .registered .select:last-child{
+    border-right: none; 
+}
+/* 搜索部分 */
+.content{
+    width: 1190px;
+    height: 140px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.content .jd{
+    width: 190px;
+    height: 120px;
+    vertical-align: middle;
+    float: left;
+}
+.content .center{
+    width: 805px;
+    height: 140px;
+    float: left;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+.content .center .first{
+    width: 805px;
+    height: 36px;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+.content .center .first .search{
+    width: 550px;
+    height: 32px;
+    border: 2px solid #E1251B;
+    margin-left: 60px;
+    float: left;
+}
+.content .center .first .search input{
+    width: 413px;
+    height: 28px;
+    font-size: 12px;
+    color: #333333;
+    padding: 2px 15px;
+    border: none;
+    float: left;
+}
+.content .center .first .search img{
+    width: 19px;
+    height: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 8px;
+}
+.content .center .first .search .button{
+    width: 58px;
+    height: 32px;
+    background-color: #E1251B;
+    float: right;
+}
+.content .center .first .search .button img{
+    width: 20px;
+    height: 21px;
+    margin-top: 6px;
+    margin-right: 15px;
+    margin-left: 20px;
+}
+.content .center .first .shop{
+    width: 130px;
+    height: 34px;
+    border: 1px solid #CCCCCC;;
+    float: left;
+    margin-left: 20px;
+}
+.content .center .first .shop img{
+    width: 16px;
+    height: 16px;
+    margin-right: 13px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+.content .center .first .shop span{
+    font-size: 10px;
+    color: #E1251B;
+    text-align: center;
+    line-height: 34px;
+}
+.content .center .span_1{
+    width: 550px;
+    height: 20px;
+    margin-left: 60px;
+    margin-top: 15px;
+}
+.content .center .span_1 span{
+    font-size: 10px;
+    color: #999999;
+    text-align: center;
+    margin-right: 10px;
+}
+.content .center .span_1  span:first-child,.content .center .span_2  span:first-child,.content .center .span_2  span:nth-child(2){
+    color: #E1251B;
+}
+.content .center .span_2 {
+    width: 805px;
+    height: 40px;
+    margin-top: 20px;
+}
+.content .center .span_2 span{
+    font-size: 15px;
+    color: #636363;
+    text-align: center;
+    margin: 0 11px;
+}
+.content .distribution{
+    width: 190px;
+    height: 120px;
+    vertical-align: middle;
+    float: left;
+}

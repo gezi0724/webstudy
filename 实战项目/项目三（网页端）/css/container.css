@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* 主要内容部分 */
+.show{
+    width: 100%;
+    background-color: #E3E4E5;
+    border-top: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+    padding-top: 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+.container{
+    width: 1205px;
+    height: 480px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+/* 左边部分 */
+.container .left_nav{
+    width: 190px;
+    height: 480px;
+    background-color: white;
+    padding-left: 18px;
+    float: left;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-sizing: border-box;
+}
+.container .left_nav .list{
+    list-style: none;
+    vertical-align: middle;
+    position: relative;
+    overflow: hidden;
+    position: relative;
+}
+.container .left_nav .list li{
+    font-size: 14px;
+    color: #636363;
+    height: 25px;
+    line-height: 25px;
+}
+/* 点击文本出现隐藏文本框 */
+/* .container .left_nav .list li:hover{
+    position: absolute;;
+    top: 0;
+    left: 190px;
+}  */
+
+/* 中间轮播图 */
+.container .dynamic{
+    width: 815px;
+    height: 480px; 
+    float: left;
+}
+.container .dynamic .big_img{
+    width: 590px;
+    height: 470px;
+    margin-left: 15px;
+    margin-right: 15px;
+    float: left;
+}
+.container .dynamic .big_img img{
+    width: 590px;
+    height: 480px;
+}
+.container .dynamic .small_img{
+    width: 190px;
+    height: 480px;
+    float: left;
+}
+.container .dynamic .small_img img{
+    width: 190px;
+    height: 150px;
+    margin-bottom: 15px;
+    display: block;
+}
+.container .dynamic .small_img:last-child{
+    margin-bottom: 0;
+}
+/* 右边部分 */
+.container .right_nav{
+    width: 190px;
+    height: 480px;
+    background-color: white;
+    float: right;
+}
+.container .right_nav .top{
+    width: 190px;
+    height: 102px;
+    background-color: white;
+    border-bottom: 1px solid #CCCCCC;
+    padding-bottom: 5px;
+}
+.container .right_nav .top .greet{
+    width: 190px;
+    height: 72px;
+    padding: 15px 20px;
+    float: left;
+    box-sizing: border-box;
+}
+.container .right_nav .top .greet .image{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid  #CCCCCC;
+    float: left;
+}
+.container .right_nav .top .greet .image img{
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    margin-top: 7px;
+    margin-left: 7px;
+}
+.container .right_nav .top .welcome{
+    float: left;
+    margin-left: 10px;
+}
+.container .right_nav .top .welcome p{
+    font-size: 12px;
+    color: #666666;
+    margin-bottom: 5px;
+}
+.container .right_nav .top .welcome .select .span_1,.container .right_nav .top .welcome .select .span_2{
+    font-size: 12px;
+    color: #333333;
+    margin: 0 auto;
+    float: left;
+}
+.container .right_nav .top .welcome .select .span_1{
+    padding-right: 5px;
+    border-right: 1px solid #CCCCCC;
+}
+.container .right_nav .top .welcome .select .span_2{
+    padding-left: 5px;
+}
+.container .right_nav .top .vip{
+    padding: 0 20px 20px 20px;
+}
+.container .right_nav .top .vip .welfare{
+    width: 70px;
+    height: 25px;
+    border-radius: 30px;
+    background-color: #E1251B;
+    font-size: 12px;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: 25px;
+    float: left;
+    margin-right: 5px;
+}
+.container .right_nav .top .vip .PLUS{
+    width: 70px;
+    height: 25px;
+    border-radius: 30px;
+    background-color: #363634;
+    font-size: 12px;
+    color: #E5D790;
+    text-align: center;
+    line-height: 25px;
+    float: left;
+}
+.right_nav .letters{
+    padding-top: 10px;
+}
+.right_nav .letters .letters_title{
+    font-size: 14px;
+    color: #333333;
+    margin-left: 15px;
+}
+.right_nav .letters .more{
+    font-size: 12px;
+    color: #999999;
+    margin-left: 60px;
+}
+.right_nav .letters_content{
+    width: 190px;
+    padding: 0 8px 10px 8px;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #CCCCCC;
+}
+.letters_list li{
+    margin-top: 5px;
+    list-style: none;
+}
+.letters_list  li .letters_nav{
+    font-size: 12px;
+    color: #E1251B;
+    background-color: pink;
+    margin-right: 6px;
+    padding: 0 5px;
+}
+.letters_list li .letters_container{
+    font-size: 12px;
+    color: #666666;
+    display: inline-block;
+    width: 120px;
+    height: 17px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    vertical-align: middle;
+    /* 文本溢出来，显示省略号（单行，溢出隐藏） */
+}
+.icon{
+    width: 190px;
+    height: 230px;
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+.icon .icon_list .icon_img{
+    float: left;
+    width: 33.3%;
+    height: 25%;
+    margin: 0 auto;
+}
+.icon .icon_list .icon_img img{
+    width: 28px;
+    height: 28px;
+    display: block;
+    margin: 0 auto;
+}
+.icon .icon_list .icon_img span{
+   font-size: 12px;
+   color: #333333;
+   text-align: center;
+   display: block;
+   margin-top: 5px;
+   margin-bottom: 5px;
+}
+.icon .icon_list .icon_img:first-child img{
+    margin-left: 20px;
+}
